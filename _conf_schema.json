@@ -1,0 +1,11 @@
+{
+    "whitelist_groups": {
+        "description": "允许使用 AI 对话的群 ID 列表",
+        "type": "list",
+        "hint": "填入群号，多个群用逗号分隔",
+        "items": {
+            "type": "string",
+            "description": "群号"
+        }
+    }
+}
