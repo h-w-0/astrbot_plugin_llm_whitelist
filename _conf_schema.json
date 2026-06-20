@@ -1,11 +1,46 @@
 {
-    "whitelist_groups": {
-        "description": "允许使用 AI 对话的群 ID 列表",
+    "group_mode": {
+        "description": "群聊模式",
+        "type": "string",
+        "hint": "可选值: disabled（不开启）/ whitelist（白名单）/ blacklist（黑名单）",
+        "default": "whitelist"
+    },
+    "group_whitelist": {
+        "description": "群聊白名单 — 仅这些群可调用AI",
         "type": "list",
-        "hint": "填入群号，多个群用逗号分隔",
+        "hint": "填入群号，多个用逗号分隔",
         "items": {
-            "type": "string",
-            "description": "群号"
+            "type": "string"
+        }
+    },
+    "group_blacklist": {
+        "description": "群聊黑名单 — 这些群禁止调用AI",
+        "type": "list",
+        "hint": "填入群号，多个用逗号分隔",
+        "items": {
+            "type": "string"
+        }
+    },
+    "private_mode": {
+        "description": "私聊模式",
+        "type": "string",
+        "hint": "可选值: disabled（不开启）/ whitelist（白名单）/ blacklist（黑名单）",
+        "default": "disabled"
+    },
+    "private_whitelist": {
+        "description": "私聊白名单 — 仅这些用户可私聊调用AI",
+        "type": "list",
+        "hint": "填入用户QQ/ID，多个用逗号分隔",
+        "items": {
+            "type": "string"
+        }
+    },
+    "private_blacklist": {
+        "description": "私聊黑名单 — 这些用户禁止私聊调用AI",
+        "type": "list",
+        "hint": "填入用户QQ/ID，多个用逗号分隔",
+        "items": {
+            "type": "string"
         }
     }
 }
