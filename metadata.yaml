@@ -1,7 +1,7 @@
 name: astrbot_plugin_llm_whitelist
-display_name: LLM 群白名单
-desc: 仅在指定群聊中启用 AI 对话，非白名单群只响应插件命令，不调用 LLM。
-short_desc: 按群控制 LLM 开关，插件不受影响
-version: v1.0.0
+display_name: LLM 群/私聊权限控制
+desc: 独立控制群聊和私聊的 AI 对话权限，支持白名单/黑名单/不开启三种模式
+short_desc: 支持群聊和私聊的白名单/黑名单控制
+version: v2.0.0
 author: H_W
 repo: https://github.com/h-w-0/astrbot_plugin_llm_whitelist
